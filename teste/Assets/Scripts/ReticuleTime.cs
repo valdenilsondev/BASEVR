@@ -30,6 +30,7 @@ public class ReticuleTime : MonoBehaviour {
 			if(timeCorrent >= timeTotal)
             {
 				isAtivo = false;
+				timeEvents[idEvent].Invoke();
             }
         }
     }
